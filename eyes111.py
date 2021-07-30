@@ -79,6 +79,8 @@ def get_model():
         wtf.keras.layers.Flatten(),
         wtf.keras.layers.Dense(200, activation = "relu"),
         wtf.keras.layers.Dropout(0.5),
+        wtf.keras.layers.Dense(200, activation = "relu"),
+        wtf.keras.layers.Dropout(0.5),
         wtf.keras.layers.Dense(2, activation = "softmax")
     ])
     # Compile and return the model 
